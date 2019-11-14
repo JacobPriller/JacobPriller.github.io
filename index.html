@@ -306,7 +306,56 @@ window.onclick = function(event) {
      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D2260826007541389%26id%3D100008420346670&width=500" width="300" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
   </div>
 <div class="column">
-<img src="10137.jpeg" class="w3-image" width="482" height="600">
+<<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Overlay Title</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="10137.jpeg" class="w3-image" width="400" height="500">
+  <div class="overlay">This is me DJ'ing at Deeprun Elementary School's PTA fun run fundraiser </div>
+</div>
+
+</body>
+</html>
     <!-- End photo grid -->
     </div>
   <!-- End Portfolio Section -->
